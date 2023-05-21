@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Models\feedback;
+use App\Models\feedback;
 use Illuminate\Http\Request;
 
 class FeedbackController extends Controller
@@ -12,11 +12,7 @@ class FeedbackController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $feedbacks = Feedback::where('allow', '=', 1)->get();
-        return view('feedbacks', compact('feedbacks'));
-    }
+    
 
     /**
      * Show the form for creating a new resource.
