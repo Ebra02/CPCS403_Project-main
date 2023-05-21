@@ -1,0 +1,6 @@
+/* this is for gallary simple animation when small photo got selected */                 
+                    .selected {
+                        z-index:-1;
+                        transform: scale(1.2); 
+                    }
+                    
